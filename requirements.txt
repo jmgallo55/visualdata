@@ -1,3 +1,4 @@
+#d3.sj support
 alembic==0.9.6
 Babel==2.5.1
 blinker==1.4
@@ -34,11 +35,5 @@ visitor==0.1.3
 Werkzeug==0.12.2
 WTForms==2.1
 
-#Plotly
-#numpy
-#plotly
-#pandas
 
-# requirements for Heroku
-#psycopg2==2.7.3.1
-#gunicorn==19.7.1
+

@@ -1,6 +1,8 @@
 from datetime import datetime
 from flask import render_template, flash, redirect, url_for, request, g, \
     jsonify, current_app
+#for d3.sj
+from app.main.stock_scraper import get_data
 from flask_login import current_user, login_required
 from flask_babel import _, get_locale
 from guess_language import guess_language
@@ -29,6 +31,12 @@ def index():
 @bp.route('/project1', methods=['GET', 'POST'])
 def project1():
      return render_template('proj1.html', title=_('National Student Loans'))
+
+#adding in for d3.sj
+#@bp.route('/', methods=['GET', 'POST'])
+# @bp.route('/data', methods=['GET', 'POST'])
+# def data():
+#      return jsonify(get_data())
 
 @bp.route('/explore')
 @login_required
